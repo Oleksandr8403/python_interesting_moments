@@ -20,7 +20,7 @@ def users_passwords(count):
 
     for key, value in users_passwords_dict.items():
         print(key, value)
-    return
+    return users_passwords_dict
 
 
 if __name__ == '__main__':
