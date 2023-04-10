@@ -18,10 +18,12 @@ def users_passwords(count):
                     for x in range(1, count+1)
     }
 
-    for key, value in users_passwords_dict.items():
-        print(key, value)
     return users_passwords_dict
 
 
 if __name__ == '__main__':
-    users_passwords(int(input('Please enter a number of user-password pairs\n')))
+    count_users = int(input('Please enter a number of user-password pairs\n'))
+    dict_result = users_passwords(count_users)
+    print(dict_result)
+    for key, value in dict_result.items():
+        print(key, value)
